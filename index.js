@@ -32,6 +32,7 @@ dbConnect();
 const PORT = process.env.PORT || 5001;
 
 //Serve static assets in Production
+
 //if(process.env.NODE_ENV === 'production') 
 {
     app.use(express.static('client/build'))
