@@ -1,10 +1,7 @@
 const express = require ('express');
 const cors = require ('cors');
-
 const dbConnect = require('./config/db')
-
 const app = express();
-
 const path = require ('path')
 
 // Initialize middleware
@@ -16,7 +13,7 @@ app.use('/posts',  require('./routes/posts'));
 
 dbConnect();
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5002;
 
 //Serve static assets in Production
 
